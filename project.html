@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ticket reservation</title>
+    <link rel="stylesheet" href="./public/css/styles.css" />
+  </head>
+  <body>
+    <header class="information">
+      <div class="active-info">
+        <div class="circle active">1</div>
+        <p>Select origin and destination.</p>
+      </div>
+      <div class="break"></div>
+      <div>
+        <div class="circle">2</div>
+        <p>Confirmation and authentication</p>
+      </div>
+      <div class="break"></div>
+      <div>
+        <div class="circle">3</div>
+        <p>Final payment and confirmation</p>
+      </div>
+      <div class="break"></div>
+      <div>
+        <div class="circle">4</div>
+        <p>Download and receive tickets</p>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <main class="wrapper">
+      <section class="content">
+        <p class="text-main">Please complete the following details.</p>
+        <div class="inputs-wrapper">
+          <div>
+            <label class="text-secondary text-sm" for="fullName">
+              Enter your first and last name:
+            </label>
+            <input
+              id="fullName"
+              type="text"
+              placeholder="Example: Amir Hossein Teymur"
+            />
+          </div>
+          <div>
+            <label class="text-secondary text-sm" for="phoneNumber">
+              Enter mobile number:
+            </label>
+            <input
+              id="phoneNumber"
+              type="text"
+              placeholder="Example: 09911871596"
+            />
+          </div>
+          <div>
+            <label class="text-secondary text-sm" for="email">
+              Enter your email address:
+            </label>
+            <input
+              id="email"
+              type="email"
+              placeholder="Example: example@gmail.com"
+            />
+          </div>
+        </div>
+
+        <!-- Select boxes -->
+        <div>
+          <p class="text-main">
+            Please enter the origin and destination route.
+          </p>
+          <div class="ways">
+            <div>
+              <label class="text-secondary text-sm">
+                Enter the destination province:
+              </label>
+              <select class="provinces-select">
+                <option selected>Please choose...</option>
+              </select>
+            </div>
+            <div class="">
+              <label class="text-secondary text-sm">
+                Enter your destination city:
+              </label>
+              <select class="cities-select">
+                <option selected>Please choose...</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="buttons-wrapper">
+          <button class="cancel-button">opt out</button>
+          <button class="confirm-button">Confirm and continue</button>
+        </div>
+      </section>
+      <div class="sidebar">
+        <div>
+          <h3 class="sidebar-title">
+            Travel system
+            <span class="bold-title">-Green Route-</span>
+          </h3>
+          <p class="sidebar-caption">
+            Masir Sabz Travel System is an independent and innovative company in
+            the field of providing travel and tourism services. This system is
+            designed to facilitate and optimize processes related to domestic
+            and international travel and strives to provide a unique and
+            convenient experience for travelers by providing comprehensive and
+            diverse services.
+          </p>
+        </div>
+        <img src="./public/image/travel.png" alt="" />
+      </div>
+    </main>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
